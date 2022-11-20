@@ -1,11 +1,11 @@
 #ifndef BTREE_H
 #define BTREE_H
 
-struct tree_node {
+typedef struct tree_node {
   int item;
   struct tree_node *left;
   struct tree_node *right;
-};
+} tree_node;
 
 int Empty(struct tree_node *t);
 struct tree_node *Insert(int x, struct tree_node *t);
